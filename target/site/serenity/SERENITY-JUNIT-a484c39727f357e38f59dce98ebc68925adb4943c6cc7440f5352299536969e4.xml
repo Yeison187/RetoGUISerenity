@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Como usuario quiero ingresar al modulo Mi Info" skipped="0" tests="5" time="21.42" timestamp="2021-10-24 02:05:42"><testcase name="Inicio sesion valido"/><testcase name="Agregar nueva dependencia"/><testcase name="Adjuntar archivo"/></testsuite>
