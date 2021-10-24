@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        features = {"src/test/resources/features/orangehrm/dependents.feature"},
+        features = {"src/test/resources/features/orangehrm"},
         glue = {"co.com.sofka.stepdefinition.orangehrm"},
         tags = {"not @ignore"}
 )

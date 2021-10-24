@@ -1,40 +1,31 @@
 package co.com.sofka.stepdefinition.orangehrm;
 
-import co.com.sofka.exceptions.practiceform.ValidationTextDoNotMatch;
 import co.com.sofka.stepdefinition.Setup;
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 
-import static co.com.sofka.exceptions.practiceform.ValidationTextDoNotMatch.VALIDATION_DO_NOT_MATCH;
-import static co.com.sofka.questions.practiceform.PracticeForm.practiceForm;
 import static co.com.sofka.tasks.landingpage.OpenLandingPage.openLandingPage;
-import static co.com.sofka.tasks.practiceform.BrowseToPracticeForm.browseToPracticeForm;
+import static co.com.sofka.tasks.practiceform.FillAttachmentsForm.fillAttachentsForm;
+import static co.com.sofka.tasks.practiceform.BrowseToOrange.browseToOrange;
+import static co.com.sofka.tasks.practiceform.FillDepedentsForm.fillDependentsForm;
 import static co.com.sofka.tasks.practiceform.FillPracticeForm.fillPracticeForm;
-import static co.com.sofka.userinterfaces.practiceform.PracticeForm.*;
-import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-import static org.hamcrest.CoreMatchers.equalTo;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class DependentsStepDefinition extends Setup {
 
     private static final String ACTOR_NAME = "Student";
 
-    @Given("el usuario necesito ingresar al sistema OrangHRM")
-    public void ingresoSistema() {
+    @Given("^el usuario necesita agregar una nueva dependencia, inicia sesion el usuario (.+), la contraseña (.+)")
+    public void ingresoUsuario(String user, String pass) throws InterruptedException {
         actorSetupTheBrowser(ACTOR_NAME);
         theActorInTheSpotlight().attemptsTo(
                 openLandingPage()
         );
-    }
 
-    @When("^ingresa el usuario (.+), la contraseña (.+)$")
-    public void ingresoUsuario(String user, String pass) throws InterruptedException {
         theActorInTheSpotlight().attemptsTo(
-                browseToPracticeForm()
+                browseToOrange()
         );
 
         theActorInTheSpotlight().attemptsTo(
@@ -43,27 +34,31 @@ public class DependentsStepDefinition extends Setup {
                         .pass(pass)
 
 
-
         );
 
     }
 
 
-    @Then("^al dar click en el boton Login, debe ingresar al sistema$")
+    @When("^da clic el boton add del area Assigned Dependents$")
     public void ingresaSistema() {
 
     }
 
 
+    @When("^diligencia los campos (.+),(.+),(.+)$")
+    public void diligenciarFormulario(String name, String relations ,String birth) {
+        theActorInTheSpotlight().attemptsTo(
+                fillDependentsForm()
+                        .name(name)
+                        .relationship(relations)
+                        .birth(birth),
+                fillAttachentsForm()
+                        .ruta("\\src\\test\\resources\\File\\Archivo_prueba_1.docx")
+                        .comment("comentario")
 
-    @Given("necesito agregar una nueva dependencia")
-    public void nuevaDependencia() {
 
-    }
 
-    @When("^doy clic en el boton add del area Assigned Dependents,diligencio todos los campos (.+),(.+),(.+)$")
-    public void diligenciarFormulario(String name, String dependents,String birth) {
-
+        );
     }
 
     @When("doy clic sobre el boton save")
@@ -71,18 +66,20 @@ public class DependentsStepDefinition extends Setup {
 
     }
 
-    @Given("necesito agregar un nuevo archivo")
+    @Given("necesita agregar un nuevo archivo, da clic en el boton add del area Assigned Attachments")
     public void nuevoArchivo() {
 
     }
 
-    @When("^doy clic en el boton add del area Assigned Attachments,adjunto el archivo (.+)$")
-    public void adjuntarArchivo(String ruta){
+    @When("^adjunto el archivo (.+), diligencio el campo comment (.+)$")
+    public void adjuntarArchivo(String ruta, String comentario){
+        System.out.println(ruta);
+        theActorInTheSpotlight().attemptsTo(
+                fillAttachentsForm()
+                        .ruta(ruta)
+                        .comment(comentario)
 
-    }
-
-    @When("^diligencio el campo comment (.+), doy clic sobre el boton save$")
-    public void subirArchivo(String comentario) {
+        );
 
     }
 
