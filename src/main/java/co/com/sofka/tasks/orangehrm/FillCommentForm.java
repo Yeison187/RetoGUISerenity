@@ -27,7 +27,7 @@ public class FillCommentForm implements Task {
                 Enter.theValue(comment).into(BOX_COMMENT),
 
                 Scroll.to(BUTTON_COMMENT),
-                Click.on(BOX_COMMENT),
+                Click.on(BUTTON_COMMENT),
 
                 Scroll.to(SHARE_COMMENT),
                 Click.on(SHARE_COMMENT),

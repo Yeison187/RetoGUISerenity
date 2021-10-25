@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Yo como administrativo puedo iniciar sesion en el aplicativo","Inicio sesion invalido","SUCCESS","2021-10-24T19:16:20.816-05:00[America/Bogota]","0.0","17.9"
-"Yo como administrativo puedo iniciar sesion en el aplicativo","Inicio sesion campos vacios","ERROR","2021-10-24T19:16:38.715-05:00[America/Bogota]","0.0","6.15"
-"Yo como administrativo puedo iniciar sesion en el aplicativo","Inicio sesion valido","SUCCESS","2021-10-24T19:16:45.715-05:00[America/Bogota]","0.0","9.11"
+"Yo como administrativo puedo iniciar sesion en el aplicativo","Inicio sesion invalido","SUCCESS","2021-10-24T21:44:42.419-05:00[America/Bogota]","0.0","18.08"
+"Yo como administrativo puedo iniciar sesion en el aplicativo","Inicio sesion campos vacios","SUCCESS","2021-10-24T21:45:00.5-05:00[America/Bogota]","0.0","8.25"
+"Yo como administrativo puedo iniciar sesion en el aplicativo","Inicio sesion valido","SUCCESS","2021-10-24T21:45:09.68-05:00[America/Bogota]","0.0","8.55"
