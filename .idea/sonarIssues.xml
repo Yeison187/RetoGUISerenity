@@ -8,6 +8,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/questions/login/LoginInvalidCredentials.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/questions/login/LoginMessage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/questions/login/ResponseCode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/questions/login/WelcomeMessage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/questions/myinfo/LoginInvalidCredentials.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/questions/practiceform/DepedentsForm.java">
           <value>
             <set />
@@ -24,6 +49,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/tasks/FillDepedentsForm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/tasks/orangehrm/FillCommentForm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/tasks/orangehrm/ModuloBuzz.java">
           <value>
             <set />
           </value>
@@ -53,7 +88,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/tasks/practiceform/FillPLoginForm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/tasks/practiceform/FillPracticeForm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/userinterfaces/orange/orangeloginmyinfo.java">
           <value>
             <set />
           </value>
@@ -63,12 +108,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/userinterfaces/practiceform/orangeloginmyinfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/co/com/sofka/util/Gender.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/runner/orangehrm/OrangeHrmRunner.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/runner/orangehrm/PracticeFormRunner.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinition/orangehrm/AttachmentsStepsDefinitions.java">
           <value>
             <set />
           </value>
@@ -83,7 +143,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinition/orangehrm/LoginStepsDefinitions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinition/orangehrm/ModuloBuzzSteps.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinition/orangehrm/PracticeFormStepDefinition.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinition/orangehrm/attachmentsStepsDefinitions.java">
           <value>
             <set />
           </value>
@@ -93,12 +168,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/features/orangehrm/attachments.feature">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/resources/features/orangehrm/dependents.feature">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/features/orangehrm/login.feature">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/resources/features/orangehrm/loginOrange.feature">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/features/orangehrm/moduloBuzz.feature">
           <value>
             <set />
           </value>

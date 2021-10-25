@@ -6,10 +6,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import static co.com.sofka.tasks.landingpage.OpenLandingPage.openLandingPage;
-import static co.com.sofka.tasks.practiceform.FillAttachmentsForm.fillAttachentsForm;
-import static co.com.sofka.tasks.practiceform.BrowseToOrange.browseToOrange;
-import static co.com.sofka.tasks.practiceform.FillDepedentsForm.fillDependentsForm;
-import static co.com.sofka.tasks.practiceform.FillPracticeForm.fillPracticeForm;
+import static co.com.sofka.tasks.orangehrm.BrowseToOrange.browseToOrange;
+import static co.com.sofka.tasks.orangehrm.FillDepedentsForm.fillDependentsForm;
+import static co.com.sofka.tasks.orangehrm.FillPLoginForm.fillPLoginFormForm;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -29,11 +28,9 @@ public class DependentsStepDefinition extends Setup {
         );
 
         theActorInTheSpotlight().attemptsTo(
-                fillPracticeForm()
+                fillPLoginFormForm()
                         .user(user)
                         .pass(pass)
-
-
         );
 
     }
@@ -44,51 +41,19 @@ public class DependentsStepDefinition extends Setup {
 
     }
 
-
     @When("^diligencia los campos (.+),(.+),(.+)$")
     public void diligenciarFormulario(String name, String relations ,String birth) {
         theActorInTheSpotlight().attemptsTo(
                 fillDependentsForm()
                         .name(name)
                         .relationship(relations)
-                        .birth(birth),
-                fillAttachentsForm()
-                        .ruta("\\src\\test\\resources\\File\\Archivo_prueba_1.docx")
-                        .comment("comentario")
-
-
-
+                        .birth(birth)
         );
     }
 
-    @When("doy clic sobre el boton save")
-    public void guardarDependencia() {
-
+    @Then("^debe mostra el mensaje: (.+)$")
+    public void guardarDependencia(String message) {
+        System.out.println("Hola");
     }
-
-    @Given("necesita agregar un nuevo archivo, da clic en el boton add del area Assigned Attachments")
-    public void nuevoArchivo() {
-
-    }
-
-    @When("^adjunto el archivo (.+), diligencio el campo comment (.+)$")
-    public void adjuntarArchivo(String ruta, String comentario){
-        System.out.println(ruta);
-        theActorInTheSpotlight().attemptsTo(
-                fillAttachentsForm()
-                        .ruta(ruta)
-                        .comment(comentario)
-
-        );
-
-    }
-
-    @Then("^se debe mostra el mensaje: (.+)$")
-    public void confirmarProcesoExitoso(String mensaje) {
-
-    }
-
-
-
 
 }
